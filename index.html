@@ -593,6 +593,7 @@ function renderProgress(){
 }
 
 /* ---------- tabs ---------- */
+
 let tab="today";
 function switchTab(t){ tab=t; document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("on",b.dataset.tab===t)); document.querySelectorAll(".view").forEach(v=>v.classList.toggle("on",v.id==="v-"+t)); renderAll(); window.scrollTo(0,0); }
 document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>switchTab(b.dataset.tab));
